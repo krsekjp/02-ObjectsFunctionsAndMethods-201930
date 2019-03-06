@@ -205,7 +205,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 6. Implement and test this function, per its doc-string above.
+    # DONE: 6. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
@@ -218,10 +218,13 @@ def try_methods_and_functions():
     blue5_turtle.speed = 1
     draw_many_squares(blue5_turtle,2,100,30)
     blue5_turtle.speed = 5
-    blue5_turtle.pen.color('red')
+    #blue5_turtle.pen.color('red')
+    blue5_turtle.pen = rg.Pen('red',5)
     draw_many_squares(blue5_turtle,10,50,15)
     blue5_turtle.pen = rg.Pen('black', 3)
-    blue5.turtle
+    blue5_turtle.backward(200)
+    blue5_turtle.draw_circle(30)
+    blue5_turtle.draw_square(50)
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
