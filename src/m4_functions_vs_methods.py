@@ -218,8 +218,8 @@ def try_methods_and_functions():
     blue5_turtle.speed = 1
     draw_many_squares(blue5_turtle,2,100,30)
     blue5_turtle.speed = 5
-    #blue5_turtle.pen.color('red')
-    blue5_turtle.pen = rg.Pen('red',5)
+    blue5_turtle.pen.color = 'red'
+    #blue5_turtle.pen = rg.Pen('red',5)
     draw_many_squares(blue5_turtle,10,50,15)
     blue5_turtle.pen = rg.Pen('black', 3)
     blue5_turtle.backward(200)
