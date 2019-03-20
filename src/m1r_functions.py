@@ -5,7 +5,7 @@
 # Then mark this _TODO_ as DONE and commit-and-push your work.
 #
 ###############################################################################
-
+import rosegraphics as rg
 
 def main():
     hello("Snow White")
@@ -31,3 +31,15 @@ def hello_and_goodbye(person1, person2):
 
 
 main()
+
+x = 33
+r = 20
+p = rg.Point(80,50)
+c = rg.Circle(p,r)
+r = 77
+p.x = 44
+
+print(p.x)
+print(c.center.x)
+print(c.radius)
+print(r)
